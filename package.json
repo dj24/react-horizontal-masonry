@@ -1,7 +1,7 @@
 {
   "name": "react-horizontal-masonry",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A horizontal masonry layout component for React",
   "main": "./dist/index.cjs",
@@ -58,8 +58,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
     "vitest": "^3.2.4"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^10.1.0"
   }
 }
