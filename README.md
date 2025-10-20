@@ -4,11 +4,11 @@ A flexible horizontal masonry layout component for React that arranges items in 
 
 ## Features
 
-- 🎯 **Aspect Ratio Based**: Items are arranged based on their aspect ratios to create optimal layouts
+- 📦 **Tiny Size**: Under 1kb minified + gzipped
+- ⚛️ **Stateless**: No extra state, purely prop-driven rendering
+- 🔧 **Zero Dependencies**: No external dependencies beyond React
 - ⚡ **TypeScript**: Full TypeScript support with type definitions
 - 🎨 **Customizable**: Configurable gap, target row aspect ratio, and styling
-- 📦 **Tree-shakeable**: Optimized bundle size with tree-shaking support
-- 🔧 **Zero Dependencies**: No external dependencies beyond React
 
 ## Installation
 
@@ -49,11 +49,12 @@ function App() {
 
 ### Grid Props
 
-| Prop                   | Type        | Required | Default | Description                                        |
-| ---------------------- | ----------- | -------- | ------- | -------------------------------------------------- |
-| `gap`                  | `string`    | Yes      | -       | CSS gap value between items (e.g., "10px", "1rem") |
-| `targetRowAspectRatio` | `number`    | Yes      | -       | Target aspect ratio for each row (width/height)    |
-| `children`             | `ReactNode` | Yes      | -       | Grid.Item components                               |
+| Prop                   | Type        | Required | Default    | Description                                        |
+| ---------------------- | ----------- | -------- | ---------- | -------------------------------------------------- |
+| `gap`                  | `string`    | Yes      | -          | CSS gap value between items (e.g., "10px", "1rem") |
+| `targetRowAspectRatio` | `number`    | Yes      | -          | Target aspect ratio for each row (width/height)    |
+| `maxColumns`           | `number`    | No       | `Infinity` | Maximum number of columns per row                  |
+| `children`             | `ReactNode` | Yes      | -          | Grid.Item components                               |
 
 ### Grid.Item Props
 
