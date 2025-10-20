@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: ["src/index.ts"],
-  format: ["cjs", "esm"],
+  format: ["esm"],
   dts: {
     resolve: true,
     compilerOptions: {
@@ -15,7 +15,7 @@ export default defineConfig({
     },
   },
   splitting: false,
-  sourcemap: true,
+  sourcemap: false,
   clean: true,
   external: ["react", "react-dom"],
   treeshake: true,
